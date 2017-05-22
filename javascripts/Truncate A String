@@ -1,10 +1,14 @@
 function truncateString(str, num) {
+  //if num is greater than str's length than return original str
   if( num >= str.length){
     return str;
   }
+  
+  //adjust numbers of letters 
   if( num >= 6){
     num -= 3;
   }
+  
   str = str.slice(0, num);
   return str + "...";
 }
